@@ -1,0 +1,180 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.menu-container {
+  font-family: Arial, sans-serif;
+  position: relative;
+  display: inline-block;
+}
+
+.main-button {
+  padding: 10px;
+  background: #333;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-bottom: 5px;
+}
+
+.dropdown,
+.submenu {
+  position: absolute;
+  background: white;
+  border: 1px solid #ccc;
+  min-width: 160px;
+  z-index: 999;
+}
+
+.dropdown {
+  top: 100%;
+  left: 0;
+  border-radius: 5px;
+}
+
+.dropdown .menu-item:not(:last-child) .menu-label {
+  border-bottom: 1px solid #ebebeb;
+}
+
+.submenu {
+  top: 0;
+  left: 100%;
+}
+
+.menu-item {
+  position: relative;
+}
+
+.menu-label {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  cursor: pointer;
+}
+.menu-label p {
+  margin: 0;
+}
+
+.menu-item:hover > .menu-label {
+  background-color: #f0b429;
+}
+
+/* modal css */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+.modal-box {
+  background: white;
+  border-radius: 10px;
+  width: 30%;
+  padding: 20px;
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.modal-header h3 {
+  margin: 0;
+}
+
+.close-btn {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.modal-body {
+  margin-top: 15px;
+}
+
+.modal-footer {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.btn-secondary {
+  background: #eee;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background: #f0b429;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.label_input_div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.label_input_div input {
+  padding: 10px;
+  border: solid 1px #e7e7e7;
+  border-radius: 5px;
+  width: 70%;
+}
+
+.modal_btn {
+  padding: 10px 24px;
+  border-radius: 5px;
+  border: solid 1px lightgray;
+}
